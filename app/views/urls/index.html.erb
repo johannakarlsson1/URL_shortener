@@ -1,0 +1,7 @@
+<h1>URLs</h1>
+
+<% @urls.each do |url| %>
+<%= link_to url.random_id, url_path(:id => url.random_id) %> => <%= url.original %>
+<% end %>
+
+<%= link_to "New URL", new_url_path %>
